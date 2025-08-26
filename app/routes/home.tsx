@@ -21,7 +21,7 @@ export default function Home() {
     </section>
 
     <div className="resumes-section">
-      {resumes.map((resume: Resume) => (
+      {resumes?.map((resume: Resume) => (
         <ResumeCard key={resume.id} resume={resume} />
       ))}
     </div>
